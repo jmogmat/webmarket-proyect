@@ -1,25 +1,31 @@
+# .gitignore
 
-###> symfony/framework-bundle ###
+# Composer
+/vendor/
+/composer.lock
+
+# Symfony
+/var/
 /.env.local
 /.env.local.php
 /.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
-###< symfony/framework-bundle ###
 
-###> phpunit/phpunit ###
-/phpunit.xml
+# Logs and cache
+/log/
+/tmp/
+/cache/
+
+# PHPUnit
 .phpunit.result.cache
-###< phpunit/phpunit ###
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+# .env file
+.env
 
-###> symfony/asset-mapper ###
-/public/assets/
-/assets/vendor/
-###< symfony/asset-mapper ###
+# Ignore IDE files
+/.idea/
+/.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
